@@ -1,0 +1,144 @@
+header {
+	text-align: center;
+	color:white;
+	background-color: #A90F00; 
+}
+
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+}
+
+.slider2 ul:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+	height: 300px;
+}
+
+@keyframes cambio{
+	0% { margin-left: 0%; }
+	20% { margin-left: 0%; }
+
+	25% { margin-left: -100%; }
+	45% { margin-left: -100%; }
+
+	50% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+
+	75% { margin-left: -300%; }
+	100% { margin-left: -300%; }
+
+}
+
+nav {
+	width: 28vw;
+	height: 100%;
+	background-color: #FFB400;
+}
+
+
+ul {
+	list-style: none;
+	display: block;
+}
+
+li {
+	width: 100%;
+	border-bottom: 1px solid white;
+	overflow: hidden;
+}
+
+p.menu {
+	position: relative;
+	padding: 16px;
+	padding-right: 25px;
+	text-align: center;
+	color: white;
+	opacity: .9;
+	font-size: 1.2em;
+}
+
+
+div.barra {
+	position: absolute;
+	height: 50px;
+	width: 0px;
+	background-color: white;
+	opacity: .2;
+	-webkit-transition: width .2s;
+}
+
+li:hover div.barra {
+	width: 26.5vw;
+}
+
+
+
+#titulo-intro {
+	background: #B30200;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	text-align: center;
+	width: 920px;
+}
+
+
+#txt-intro1 {
+	background: #FFB400;
+	border-radius: 8px;
+	font-size: 1.3em;
+	height: 200px;
+	padding: 30px;
+	width: 920px;
+}
+
+#txt-intro1:hover {
+	background: white;
+	margin-top: -5px;
+   -webkit-box-shadow: 5px 10px 6px 2px #777;
+   -moz-box-shadow: 5px 10px 6px 2px #777;
+   -o-box-shadow: 5px 10px 6px 2px #777;
+   box-shadow: 5px 10px 6px 2px #777;
+}
+
+
+footer {
+	text-align: center;
+	font-family: Microsoft JhengHei Light;
+	color:white;
+	background-color: #A90F00; 
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #FFB400;
+}
+
